@@ -11,19 +11,19 @@ My-Note Site - http://my-note.net63.net or http://my-note.net63.net/home.php
   - CSS3
   - Jquery
   - PHP
-  - 
+
 --------------------------------------------------------------------------  
 #TODO-List
 
 ##  1- Finish the site UI
       - account settings
       - Groups Template
-        - Photo
-        - Portfolio
-        - For Friends
-        - Work
-        - To Vote - Campaing for photos or videos or something else
-        - more to come
+      - Photo
+      - Portfolio
+      - For Friends
+      - Work
+      - To Vote - Campaing for photos or videos or something else
+      - more to come
       - Photo and video Albuns
       - Upload photo from social Network
       - Relacionship sugestion "Relações"

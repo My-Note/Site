@@ -1,14 +1,14 @@
-Site - http://my-note.net63.net or http://my-note.net63.net/home.php
+My-Note 
 ====
 
-My-Note Site
+My-Note Site - http://my-note.net63.net or http://my-note.net63.net/home.php
 
 =============
 
 Language:
 
-  ->HTML5
-  ->CSS3
+  ->HTML5/n<br>
+  ->CSS3/n<br>
   ->Jquery
   ->PHP
   

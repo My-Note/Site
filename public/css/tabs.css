@@ -1,0 +1,183 @@
+.tabs-below > .nav-tabs,
+.tabs-right > .nav-tabs,
+.tabs-left > .nav-tabs {
+  border-bottom: 0;
+}
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: none;
+}
+
+.tab-content > .active,
+.pill-content > .active {
+  display: block;
+}
+
+.tabs-below > .nav-tabs {
+  border-top: 1px solid #ddd;
+}
+
+.tabs-below > .nav-tabs > li {
+  margin-top: -1px;
+  margin-bottom: 0;
+}
+
+.tabs-below > .nav-tabs > li > a {
+  -webkit-border-radius: 0 0 4px 4px;
+     -moz-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px;
+}
+
+.tabs-below > .nav-tabs > li > a:hover,
+.tabs-below > .nav-tabs > li > a:focus {
+  border-top-color: #ddd;
+  border-bottom-color: transparent;
+}
+
+.tabs-below > .nav-tabs > .active > a,
+.tabs-below > .nav-tabs > .active > a:hover,
+.tabs-below > .nav-tabs > .active > a:focus {
+  border-color: transparent #ddd #ddd #ddd;
+}
+
+.tabs-left > .nav-tabs > li,
+.tabs-right > .nav-tabs > li {
+  float: none;
+  margin-left: 0px;
+}
+
+.tabs-left > .nav-tabs > li.active {
+  z-index: 3;
+}
+
+.tabs-left > .nav-tabs > li > a,
+.tabs-right > .nav-tabs > li > a {
+  min-width: 74px;
+  margin-right: 0;
+  margin-bottom: 3px;
+}
+
+.tabs-left > .nav-tabs {
+	float:left;
+	border-right: 1px solid #ddd;
+	margin-top: 0px;
+}
+
+.tabs-left > .nav-tabs > li > a {
+  margin-right: -1px;
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+}
+
+.tabs-left > .nav-tabs > li > a:hover,
+.tabs-left > .nav-tabs > li > a:focus {
+  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+}
+
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-left > .nav-tabs .active > a:focus {
+  border-color: #ddd transparent #ddd #ddd;
+  *border-right-color: #ffffff;
+}
+
+.tabs-right > .nav-tabs {
+  float: right;
+  margin-left: 19px;
+  border-left: 1px solid #ddd;
+}
+
+.tabs-right > .nav-tabs > li > a {
+  margin-left: -1px;
+  -webkit-border-radius: 0 4px 4px 0;
+     -moz-border-radius: 0 4px 4px 0;
+          border-radius: 0 4px 4px 0;
+}
+
+.tabs-right > .nav-tabs > li > a:hover,
+.tabs-right > .nav-tabs > li > a:focus {
+  border-color: #eeeeee #eeeeee #eeeeee #dddddd;
+}
+
+.tabs-right > .nav-tabs .active > a,
+.tabs-right > .nav-tabs .active > a:hover,
+.tabs-right > .nav-tabs .active > a:focus {
+  border-color: #ddd #ddd #ddd transparent;
+  *border-left-color: #ffffff;
+}
+
+.panel_arrow.active:after {
+	position: absolute;
+	display: inline-block;
+	border-top: 10px solid rgba(0, 0, 0, 0);
+	border-right: 10px solid #EEE;
+	border-bottom: 10px solid rgba(0, 0, 0, 0);
+	border-right-color: rgba(0, 0, 0, 0.55);
+	left: 64px;
+	top: 16px;
+	content: '';
+}
+.icon_tab_status{
+	background: url("../img/icons/Ink-Quill.png") no-repeat;
+	background-size: 70px;
+	padding: 23px 20px 30px 50px;
+	margin: -15px;
+}
+.panel_arrow.active > a > .icon_tab_status{
+	background: url("../img/icons/Ink-Quill-black.png") no-repeat;
+	background-size: 70px;
+}
+.icon_tab_status:hover{
+	background: url("../img/icons/Ink-Quill-hover.png") no-repeat;
+	background-size: 70px;
+}
+.icon_tab_upload{
+	background: url("../img/icons/Cloud-Upload.png") no-repeat;
+	background-size: 70px;
+	padding: 23px 20px 30px 50px;
+	margin: -15px;
+}
+.panel_arrow.active > a > .icon_tab_upload{
+	background: url("../img/icons/Cloud-Upload-black.png") no-repeat;
+	background-size: 70px;
+}
+.icon_tab_upload:hover{
+	background: url("../img/icons/Cloud-Upload-hover.png") no-repeat;
+	background-size: 70px;
+}
+.icon_tab_share{
+	background: url("../img/icons/Earth-Node.png") no-repeat;
+	background-size: 70px;
+	padding: 23px 20px 30px 50px;
+	margin: -15px;
+}
+.panel_arrow.active > a > .icon_tab_share{
+	background: url("../img/icons/Earth-Node-black.png") no-repeat;
+	background-size: 70px;
+}
+.icon_tab_share:hover{
+	background: url("../img/icons/Earth-Node-hover.png") no-repeat;
+	background-size: 70px;
+}
+.panel_base_status{
+	border: 2px solid rgba(0, 0, 0, 0.2);
+	padding: 0;
+	margin-bottom: 20px;
+	border-radius: 0 4px 4px 0;
+	margin-left: 14px;
+	width: 88%;
+}
+.panel_arrow.active > a {
+	height: 54px;
+	border: 2px solid rgba(0, 0, 0, 0.2) !important;
+	border-right: none !important;
+	margin: 0 2px;
+}
+.panel_arrow > a {
+	height: 53px;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+	background: #E0E1E2 url(//d36xtkk24g8jdx.cloudfront.net/bluebar/506c801/images/shared/noise-2.png);
+}

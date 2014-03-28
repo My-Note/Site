@@ -1,0 +1,397 @@
+.form-signin{
+  max-width: 330px;
+  margin: 40px auto 0;
+  background: rgba(255, 255, 255, 0.58);
+  opacity: 0.9;
+}
+.social-login-btn {
+  margin: 5px;
+  width: 20%;
+  font-size: 250%;
+  padding: 0;
+}
+.social-google {
+  background-color: #da573b;
+  border-color: #be5238;
+}
+.social-google:hover{
+  background-color: #be5238;
+  border-color: #9b4631;
+}
+
+.social-twitter {
+  background-color: #1daee3;
+  border-color: #3997ba;
+}
+.social-twitter:hover {
+  background-color: #3997ba;
+  border-color: #347b95;
+}
+
+.social-facebook {
+  background-color: #4c699e;
+  border-color: #47618d;
+}
+.social-facebook:hover {
+  background-color: #47618d;
+  border-color: #3c5173;
+}
+
+.social-linkedin {
+  background-color: #4875B4;
+  border-color: #466b99;
+}
+.social-linkedin:hover {
+  background-color: #466b99;
+  border-color: #3b5a7c;
+}
+
+
+body{
+    background: url('../img/background.jpg');
+    padding: 0;
+    margin: 0;
+    margin-left: 70px;
+}
+.index_body{
+    background: url('http://farm3.staticflickr.com/2832/12303719364_c25cecdc28_b.jpg') fixed;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+.wrap
+{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+p.form-title
+{
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.form_log{
+    width: 250px;
+    margin: 0 auto;
+}
+
+form.login input[type="text"], form.login input[type="password"], form.login input[type="email"], .wrap input[type="email"]{
+    width: 100%;
+    margin: 0;
+    padding: 5px 30px 5px 10px;
+    background: 0;
+    border: 0;
+    border-bottom: 1px solid #000;
+    outline: 0;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: #000;
+    outline: 0;
+}
+
+form.login button, form.login .button{
+    width: 40%;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 16px;
+    outline: 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+form.login button:hover, form.login .button:hover
+{
+    transition: background-color 0.5s ease;
+}
+
+form.login .remember-forgot
+{
+    float: left;
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+form.login .forgot-pass-content
+{
+    min-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form.login label, form.login a
+{
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+form.login a
+{
+    transition: color 0.5s ease;
+}
+
+form.login a:hover
+{
+    color: #000;
+}
+
+.pr-wrap{
+    display: none;
+}
+
+.show-form
+{
+    display: block !important;
+}
+.pass-reset label{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.pass-reset button{
+    width: 40%;
+    border: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 10px;
+    outline: 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.pass-reset button:hover{
+    transition: background-color 0.5s ease;
+}
+.posted-by{
+  margin: 20px auto 0;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 20px;
+  text-align: center;
+}
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+  margin-top: 14px;
+  cursor:default;
+}
+.btn-circle.btn-lg {
+  font-family: 'Parisienne', cursive;
+  width: 50px;
+  height: 50px;
+  padding: 10px 14px;
+  font-size: 18px;
+  line-height: 1.5;
+  border-radius: 25px;
+  margin: 40px;
+  cursor:default;
+}
+.fa-li {
+  left:-3px;
+  top: 12px;
+}
+.list-group-item {
+  padding: 10px 20px;
+  font-size: 12px;
+}
+.modal > .list-group
+{
+    margin-bottom: 0;
+}
+.modal > .list-group .list-group-item
+{
+    border-width: 1px 0;
+}
+.modal > .list-group .list-group-item:first-child
+{
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+.modal > .list-group .list-group-item:last-child
+{
+    border-bottom: 0;
+}
+.modal-heading + .list-group .list-group-item:first-child
+{
+    border-top-width: 0;
+}
+.modal-default .list-group-item.active
+{
+    color: #000;
+    background-color: #DDD;
+    border-color: #DDD;
+}
+
+.modal .list-group-item:hover
+{
+    color: #000;
+    background-color: #DDD;
+    border-color: #DDD;
+}
+
+.icon_info{
+  margin-left: -20px;
+  font-size: 21px;
+  top: -20px;
+  color: #FFF;
+}
+.icon_info:hover{
+  color: #000;
+}
+
+/* css para os icons da PLAY STORE, WINDOWS STORE e APPLE STORE */
+
+.big-btn{
+padding: 10px 0px 11px 0px;
+width: 215px;
+margin-top:5px;
+}
+
+.big-btn i{
+font-size: 65px;
+margin-right: 0px !important;
+}
+.big-btn strong{
+font-size: 25px;
+text-shadow: 1px 2px 0px #34659B;
+color: #fff;
+line-height: 24px;
+}
+.big-btn .btn-text{
+margin-top:6px;
+}
+
+.big-btn small{font-size: 75%;}
+
+.android-btn{
+
+width: 240px;
+padding: 13px 17px 13px 0px;
+background-color: #000;
+border-color: #000;
+
+}
+.android-btn:hover{
+background-color: #272727;
+}
+
+.android-btn i{
+font-size: 55px;
+}
+
+.android-btn .btn-text{
+margin-top: 0px;
+}
+
+.android-btn strong{
+font-size: 25px;
+text-shadow: none;
+color: #fff;
+line-height: 24px;
+}
+
+.windows-btn{
+background-color:#008A00;
+width: 235px;
+padding: 13px 5px 13px 10px;
+border-color: #055805;
+}
+
+.windows-btn:hover{
+background-color: #008A00;
+}
+.windows-btn .btn-text{
+text-shadow: none;
+font-size: 26px;
+line-height: 25px;
+}
+
+hr.message-inner-separator
+{
+    clear: both;
+    margin-top: 10px;
+    margin-bottom: 13px;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+    background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+
+/* mudar a cor de texto dos placeholders */
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    black;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    black;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    black;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    black;
+}
+
+body::-webkit-scrollbar {
+    width: 14px;
+}
+
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+/*        -webkit-border-radius: 10px;
+    border-radius: 10px;*/
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+/*        -webkit-border-radius: 10px;
+    border-radius: 10px;*/
+    background:#ddd; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #ddd; 
+}
+::selection {
+  background:#f094b7;
+  color:#555;
+}
+
+::-moz-selection {
+  background:#f094b7;
+  color:#555;
+}
+
+::-webkit-selection {
+  background:#f094b7;
+  color:#555;
+}

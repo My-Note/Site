@@ -55,7 +55,8 @@ My-Note Site - http://my-note.net63.net or http://my-note.net63.net/home.php
       - online
       - more feed
       
-##  3.5- functions To Add - Jquery (probably we will use websockets for pulling data)
+##  3.5- functions To Add - Jquery 
+      (probably we will use websockets for pulling data)
       - pull new data for beggining of feed
       - pull notifications
       - pull chat message

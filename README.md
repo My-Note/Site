@@ -7,7 +7,15 @@ My-Note Site - http://my-note.net63.net or http://my-note.net63.net/home.php
 # The idea:
   - We can see Facebook, Google+, Twitter, and some other social networks, but we dont want to know only say what we want, we want to know what the other person, our friends, our crush, our best friend, anyone think and see about us, so i think and put all together and some more ideas like the one that you can join and vote if you like or no some one from the oposite sex to chat or to share your history or ideas, and plus the options to vote about your status, images and about yourself, so you can see what the others think about you, but in every thing you want privacy, and you can choose if you show your things or want to keep to yourself.
 
-##Language Code:
+## Some bases to check
+  - (VK)[http://vk.com]
+  - (Facebook)[https://www.facebook.com]
+  - (Google+)[https://plus.google.com]
+  - (Twitter)[https://twitter.com/]
+  - (Twoo)[http://www.twoo.com/]
+  - (Tagged)[http://www.tagged.com/home.html]
+
+## Language Code:
 
   - HTML5
   - CSS3

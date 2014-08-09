@@ -1,4 +1,4 @@
-[![Build Status]https://travis-ci.org/My-Note/Site.svg?branch=master)](https://travis-ci.org/My-Note/Site)
+[![Build Status](https://travis-ci.org/My-Note/Site.svg?branch=master)](https://travis-ci.org/My-Note/Site)
 
 My-Note
 ====

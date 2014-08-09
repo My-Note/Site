@@ -1,4 +1,4 @@
-[![Code Climate](https://codeclimate.com/github/codeclimate/php-test-reporter.png)](https://codeclimate.com/github/codeclimate/php-test-reporter) [![Build Status](https://travis-ci.org/codeclimate/php-test-reporter.svg?branch=master)](https://travis-ci.org/codeclimate/php-test-reporter)
+[![Build Status]https://travis-ci.org/My-Note/Site.svg?branch=master)](https://travis-ci.org/My-Note/Site)
 
 My-Note
 ====

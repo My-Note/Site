@@ -1,6 +1,7 @@
 Travis - [![Build Status](https://travis-ci.org/My-Note/Site.svg?branch=master)](https://travis-ci.org/My-Note/Site)
-Codeclimate
+
 Code Climate Badge - [![Code Climate](https://codeclimate.com/github/My-Note/Site/badges/gpa.svg)](https://codeclimate.com/github/My-Note/Site)
+
 Test Coverage Badge - [![Test Coverage](https://codeclimate.com/github/My-Note/Site/badges/coverage.svg)](https://codeclimate.com/github/My-Note/Site)
 
 My-Note

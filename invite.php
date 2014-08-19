@@ -22,7 +22,7 @@
         <title>Registration | My-Note</title>
         <?php include( 'header.php'); ?>
     </head>
-    <body class="index_body">
+    <body class="body_image">
         <div class="container" style="background:rgba(255, 255, 255, 0.95);margin-top:5%;">
 <?php
 	if ($type === "confirm") {

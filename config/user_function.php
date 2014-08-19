@@ -180,6 +180,31 @@
 
 	}
 
+	/************************************************************************
+	*                                                                      	*
+	*          		function to get the info by token   		        	*
+	*                                                                      	*
+	*************************************************************************/
+
+	function search_by_token($token){
+		global $mydb;
+
+		$query_user= "SELECT `id_invite` FROM `invite` WHERE `invite_token` = ?"; 
+		$stmt_user = $mydb->prepare($query_user); 
+		$stmt_user->bind_param("s", $token); 
+		$stmt_user->execute();
+		$stmt_user->bind_result($id);
+		if ($stmt_user->fetch()){
+			$id_invite = $id;
+		} else {
+			$id_invite = '';
+		}
+		$stmt_user->close(); 
+
+		return $id_invite;
+
+	}
+
 	//funcao para preencher os dados da pagina feed
 	###############################################
 	#partilhar

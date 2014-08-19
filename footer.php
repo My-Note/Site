@@ -43,12 +43,14 @@
 		<script src="<?php echo $back_page; ?>public/jquery/jquery.starrr.js" type="text/javascript"></script>
 		<!-- Script to show videos -->
 		<script src="<?php echo $back_page; ?>public/jquery/jquery.oembed.js" type="text/javascript"></script>
-
+		<!-- Script to background -->
+		<script src="<?php echo $back_page; ?>public/jquery/shards.min.js" type="text/javascript"></script>
 		<?php 
 			if ($page_active === "index.php") {
 		?>
 			<!-- Script for invite options -->
 			<script src="<?php echo $back_page; ?>public/jquery/index.js" type="text/javascript"></script>
+
 		<?php 
 			}
 			if ($page_active === "invite.php") {
@@ -63,10 +65,6 @@
 		?>
 
 		<script>
-		var ano = data[3].versao;
-		if (data[3].updated == false) {
-			ano = '<b style="color:red; font-size:15px;">' + data[3].versao + '</b>';
-		};
       		$(function () {
           		$("[data-toggle='tooltip']").tooltip();
 				$("[data-toggle='popover']").popover({html:true});
@@ -105,7 +103,8 @@
 						}
 					});
 				});
-
+				$('.body_image').shards([10, 35, 180, .25], [255, 20, 220, .25], [0, 0, 0, .25], 20, .8, 2, .15, true);
+				
 				$("time.timeago").timeago();
 				$('.starrr').on('starrr:change', function(e, value){
 					$(this).parent().find("label").html(value);
@@ -134,9 +133,6 @@
 				});
 				$('#Modal_search').on('shown.bs.modal', function () {
 					$('#inputSearch_modal').focus();
-				})
-				$("#inputSearch_modal").on('keyup', function(){
-
 				});
 				$('#Modal_search').on('hidden.bs.modal', function () {
 					$('#inputSearch_modal').val("");

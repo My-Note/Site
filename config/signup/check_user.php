@@ -10,5 +10,4 @@
 		$result = search_for_email($data);
 		echo $result;
 	}
-	
 ?>

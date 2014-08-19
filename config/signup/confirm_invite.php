@@ -1,11 +1,16 @@
-<?php 
-#SELECT `id_user`, `username`, `oauth_provider`, `name`, `first`, `last`, `password`, `email`, `sexo`, `interested`, `relacao`, `invite_id`, `invited`, `data` FROM `users` WHERE 1
-?>
-<!-- fim de formulario de login -->
+<!-- inicio de formulario de registo -->
 
 <div class="row" style="padding-bottom:40px;">
 	<div class="col-xs-12 col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2">
-		<form role="form">
+		<div class="row" style="margin: 20px -5px -20px; display:none" id="alert_registration">
+			<div class="alert alert-success">
+				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+				<span class="glyphicon glyphicon-ok"></span> <strong>Success Message</strong>
+				<hr class="message-inner-separator">
+				<p>Your registration was completed with success.</p>
+			</div>
+		</div>
+		<form role="form" id="registration_form">
 			<div class="row">
 				<div class="col-xs-12 col-sm-1 col-md-1" style="margin:20px 10px 0;">
 					<?php if (($name === "") and ($id !== "1")) { ?>
@@ -43,7 +48,7 @@
 			<div class="form-group  has-feedback">
 				<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" tabindex="4" value="<?=$email?>"  data-toggle="tooltip" data-placement="top" title="" required>
 				<span class="glyphicon form-control-feedback" id="span_email"></span>
-				<p class="help-block" id="recover" style="height: 0; text-align: right; background: #F5949D">
+				<p class="help-block" id="recover" style="height: 0; text-align: right; background: #F5949D; opacity:0">
 					<span class="text-muted">Email used!! <a href='config/recover.php'>Forgot your account?</a></span>
 				</p>
 			</div>
@@ -71,8 +76,8 @@
 						<label for="">Birth Date</label>
 						<div class="row">
 							<div class="col-md-12">
-								<div class="input-group date" id="birthay_registration" data-date="01-01-2000" data-date-format="dd-mm-yyyy" data-date-viewmode="years" required>
-									<input type="text" class="form-control" value="01-01-2000" required>
+								<div class="input-group date" id="birthay_registration" data-date="01-01-1990" data-date-format="dd-mm-yyyy" data-date-viewmode="years" required>
+									<input type="text" class="form-control" value="01-01-1990" required>
 									<span class="input-group-addon info"><i class="glyphicon glyphicon-calendar"></i></span>
 								</div>
 							</div>
@@ -84,7 +89,7 @@
 						<label for="">Sex</label>
 						<div class="input-group" style="margin: 0 auto;">
 							<div id="radioBtn_sex" class="btn-group">
-								<a class="btn btn-primary active" data-toggle="sex_registration" data-title="M"> <i class="fa fa-male"></i>	Male </a>
+								<a class="btn btn-primary notActive" data-toggle="sex_registration" data-title="M"> <i class="fa fa-male"></i>	Male </a>
 								<a class="btn btn-warning notActive btn_o" data-toggle="sex_registration" data-title="O"> Other</a>
 								<a class="btn btn-danger notActive btn_m" data-toggle="sex_registration" data-title="F"> Female <i class="fa fa-female"></i></a>
 							</div>
@@ -110,7 +115,7 @@
 			<hr class="colorgraph">
 			<div class="row">
 				<div class="col-xs-12 col-md-8 col-md-offset-2">
-					<input type="submit" value="Complete Registration" class="btn btn-success btn-block btn-lg" tabindex="7">
+					<button class="btn btn-success btn-block btn-lg" tabindex="7" id="confirm_registration_form">Complete Registration </button>
 				</div>
 			</div>
 			<input type="hidden" name="token" id="token" value="<?=$token?>" readonly style="display: none;">
@@ -119,4 +124,4 @@
 	</div>
 </div>
 
-<!-- fim de formulario de login -->
+<!-- fim de formulario de registo -->

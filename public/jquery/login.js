@@ -292,7 +292,7 @@ $(function() {
 
 							$('#email').attr('title', 'Email used');
 							$('#email').tooltip('show');
-							$('#recover').animate({height: '20px'}, 500, function() {
+							$('#recover').animate({height: '20px', opacity: 1}, 500, function() {
 														$(this).css("background", "none");
 													});
 						} else {
@@ -320,4 +320,62 @@ $(function() {
 			};
 		});
 
+	//************************************************************************************************
+	//																								//
+	//										Registar formulario										//
+	//																								//
+	//************************************************************************************************
+
+        $("#confirm_registration_form").click(function(e) {
+        	e.preventDefault();
+			//inputs basicos
+			var first_name	= $.trim($("#first_name").val());
+			var last_name	= $.trim($("#last_name").val());
+			var pass		= $.trim($("#password").val());
+			var pass_conf 	= $.trim($("#password_confirm").val());
+			var mail		= $.trim($("#email").val());
+			var username 	= $.trim($("#display_name").val());
+			var check 		= $('#t_and_c').is(':checked');
+			var sex			= $.trim($("#sex_registration").val());
+
+          	if ((first_name.length >= 2) && (last_name.length >= 2) && (pass_conf === pass) && (validateEmail(mail)) && (username.length >= 5) && (check) && ((sex === "M") || (sex === "F") ||(sex === "O")) ){
+
+				$.ajax({
+					type: 'POST',
+					url: 'config/signup/signup.php',
+					data: $('#registration_form').serialize(),
+					cache: false,
+					dataType: 'json', // Choosing a JSON datatype
+					success: function(data){ // Variable data contains the data we get from serverside
+						if (data == 'success') { // If clicked buttons value is all, we post every wine
+							$("#alert_registration").show(500);
+							setTimeout( function(){ 
+								window.location.href = "home.php";
+							}, 5000);
+						} else if (data == 'erro') { 
+							$("#message_registar").addClass("alert-danger");
+							$("#message_registar").html("Erro ao registar-se. Tente novamente mais tarde.");
+						}
+					}
+	            });
+          	} else {
+
+	            if (first_name.length <= 2){
+	              $("#msg_name").fadeIn(400).html("<span class='info_register'>Tem de Escrever o seu nome!!</span>");
+	            } else {
+	              $("#msg_name").html(''); 
+	            }
+		        if(check)
+	        		$("#msg_agree").fadeIn(400).html("<span class='info_register'>Tem de aceitar os termos e condições de compras!</span>");
+	            else
+	          		$("#msg_agree").html('');
+
+	          	if (pass.length < 5){
+	          		$("#msg_password_text").html("<span class='info_register'>Passwords curta!!</span>");	
+	          	}
+	          	if (pass != pass_conf){
+	          		$("#msg_password_2_text").html("<span class='info_register'>Passwords diferentes!!</span>");	
+	          	}
+          	}
+        });
 });
